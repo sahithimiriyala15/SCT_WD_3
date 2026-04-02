@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #121212;
+    color: white;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f1f1f;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.navbar h1 {
+    color: #00d4ff;
+    padding-left:100px;
+}
+
+.nav-right button {
+    padding: 8px 15px;
+    border: none;
+    background: #00d4ff;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Container */
+.container {
+    margin-top: 40px;
+}
+
+/* Board */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+/* Cells */
+.cell {
+    width: 100px;
+    height: 100px;
+    background: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.cell:hover {
+    background: #333;
+}
+
+/* Status */
+#status {
+    margin-bottom: 15px;
+}
+
+/* Restart Button */
+#restartBtn {
+    padding: 10px 20px;
+    background: #00d4ff;
+    border: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
